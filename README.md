@@ -61,22 +61,26 @@ _wget  명령어로 다운로드를  시도해 보았으나  403 인증오류가
 여기서 터미널창에 l 키를 입력하면 폴더 안에 있는 리스트들을 확인 할 수 있습니다.
 
 _2020.07.09 테스트기준 7.6.5버전을 설치하였습니다._
+
 _2021.04.28 테스트기준  8.2.0버전을 설치하였습니다._
 
 이제 cudnn 라이브러리를 읽을수 있도록 권한을 부여합니다.
 
 > sudo chmod +r libcudnn.so.7.6.5
+
 21.04.28일 기준 ▼
 > sudo chmod +r libcudnn.so.8.2.0
 
 권한이 부여가 되었을 때 심볼릭 링크를 사용하여 경로를 지정해줍니다.
 
 > sudo ln -sf libcudnn.so.7.6.5 libcudnn.so.7
+
  21.04.28일 기준 ▼
 > sudo ln -sf libcudnn.so.8.2.0 libcudnn.so.8
 
 
 > sudo ln -sf libcudnn.so.7 libcudnn.so
+
 21.04.28일 기준 ▼
 > sudo ln -sf libcudnn.so.8 libcudnn.so
 
